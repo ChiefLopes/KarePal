@@ -4,7 +4,7 @@ import HeroImage from "@/app/Assets/images/HomeImage.png";
 
 const Hero = () => {
   return (
-    <div className="bg-[#001727] ">
+    <div className="bg-[#001727]">
       {/* TEXT AREA*/}
       <div className=" flex flex-col lg:flex-row lg:justify-between pt-14 lg:pt-24 mx-10 lg:mx-14">
         <div className="text-white space-y-8 pt-2">
