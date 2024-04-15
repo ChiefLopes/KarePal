@@ -3,7 +3,9 @@ interface TYPES {
   label?: string;
   icon?: string;
   title?: string;
-  desc?: string
+  desc?: string;
+  logo?: string;
+  name?: string;
 }
 
 export const NAV_LINKS: TYPES[] = [
@@ -35,7 +37,7 @@ export const NAV_LINKS: TYPES[] = [
 
 export const SERVICE_GRID: TYPES[] = [
   {
-    icon: "/app/Assets/images/stethoscope.png",
+    icon: "/stethoscope.png",
     title: "Emergency Care",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
@@ -76,29 +78,33 @@ export const SERVICE_GRID: TYPES[] = [
   },
 ];
 
-export const TEAM_GRID = [
+export const TEAM_GRID: TYPES[] = [
   {
-    icon: "/app/Assets/images/Avatar.png",
+    icon: "/app/Assets/images/ATvatar.png",
     name: "Jackson Leo",
     title: "Head Doctor",
     desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
+    logo: "/app/Assets/images/Linkedin.png",
   },
   {
-    icon: "/app/Assets/images/Avatar.png",
-    name: "Jackson Leo",
-    title: "Head Doctor",
+    icon: "/app/Assets/images/Avatar(1).png",
+    name: "Perry Henry",
+    title: "Head Nurse",
     desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
+    logo: "/app/Assets/images/Linkedin.png",
   },
   {
-    icon: "/app/Assets/images/Avatar.png",
-    name: "Jackson Leo",
-    title: "Head Doctor",
+    icon: "/app/Assets/images/Avatar(2).png",
+    name: "Kenny Marvin",
+    title: "Specialist",
     desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
+    logo: "/app/Assets/images/Linkedin.png",
   },
   {
-    icon: "/app/Assets/images/Avatar.png",
-    name: "Jackson Leo",
-    title: "Head Doctor",
+    icon: "/app/Assets/images/Avatar(3).png",
+    name: "Mary Jake",
+    title: "AI Professional",
     desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
+    logo: "/app/Assets/images/Linkedin.png",
   },
 ];

@@ -4,6 +4,7 @@ import Hero from "./pages/home";
 import Services from "./pages/services";
 import About from "./pages/about"
 import Team from "./pages/team";
+import Newsletter from "./pages/newsletter";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Services />
       <About />
       <Team />
+      <Newsletter />
     </div>
   );
 }
