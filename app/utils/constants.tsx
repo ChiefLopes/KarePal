@@ -35,42 +35,42 @@ export const NAV_LINKS: TYPES[] = [
 
 export const SERVICE_GRID: TYPES[] = [
   {
-    icon: "/stethoscope.png",
+    icon: "/app/Assets/images/stethoscope.png",
     title: "Emergency Care",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
   {
-    icon: "/stethoscope.png",
+    icon: "/app/Assets/images/stethoscope.png",
     title: "Pharmacy",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
   {
-    icon: "/stethoscope.png",
+    icon: "/app/Assets/images/stethoscope.png",
     title: "Operation Theatre",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
   {
-    icon: "/stethoscope.png",
+    icon: "/app/Assets/images/stethoscope.png",
     title: "Blood Test",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
   {
-    icon: "/stethoscope.png",
+    icon: "/app/Assets/images/stethoscope.png",
     title: "Doctor Service",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
   {
-    icon: "/stethoscope.png",
+    icon: "/app/Assets/images/stethoscope.png",
     title: "Outdoor Check-up",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
   {
-    icon: "/stethoscope.png",
+    icon: "/app/Assets/images/stethoscope.png",
     title: "Care Giving",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
   {
-    icon: "/stethoscope.png",
+    icon: "/app/Assets/images/stethoscope.png",
     title: "Surgery",
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
