@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="container-lg space-y-7 pt-6">
+    <div className="container-lg space-y-7 pt-6 ">
       <div className="text-center">
         <h1 className="">Our Services</h1>
       </div>
@@ -21,7 +21,7 @@ const Services = () => {
         {SERVICE_GRID.map((service) => (
           <div
             key={service.title}
-            className="w-64 h-72 space-y-4 hover:bg-[#2937B6] rounded transition duration-300 ease-linear shadow-xl flex flex-col items-center justify-center"
+            className="w-64 h-72 space-y-4 rounded transition duration-300 ease-linear shadow-xl flex flex-col items-center justify-center hover:bg-[#2937B6] hover:shadow-2xl"
           >
             <Image src={service.icon} alt="icon" width={24} height={24} />
             <h2 className="font-bold">{service.title}</h2>
