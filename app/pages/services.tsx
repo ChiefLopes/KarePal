@@ -1,4 +1,6 @@
 import React from "react";
+import { SERVICE_GRID } from "../utils/constants";
+import Image from "next/image";
 
 const Services = () => {
   return (
@@ -13,7 +15,13 @@ const Services = () => {
           Companion
         </p>
       </div>
-      <div></div>
+          <div>
+              {SERVICE_GRID.map((service) => (
+                  <div key={service.title}>
+                      <Image src={service.icon} alt="icon" width={24} height={24} />
+                  </div>
+              ))}
+      </div>
     </div>
   );
 };
