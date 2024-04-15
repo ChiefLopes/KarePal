@@ -75,3 +75,30 @@ export const SERVICE_GRID: TYPES[] = [
     desc: "Real-time care and assistance, detection of illnesses before physical signs, and the enabling of natural language processing.",
   },
 ];
+
+export const TEAM_GRID = [
+  {
+    icon: "/app/Assets/images/Avatar.png",
+    name: "Jackson Leo",
+    title: "Head Doctor",
+    desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
+  },
+  {
+    icon: "/app/Assets/images/Avatar.png",
+    name: "Jackson Leo",
+    title: "Head Doctor",
+    desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
+  },
+  {
+    icon: "/app/Assets/images/Avatar.png",
+    name: "Jackson Leo",
+    title: "Head Doctor",
+    desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
+  },
+  {
+    icon: "/app/Assets/images/Avatar.png",
+    name: "Jackson Leo",
+    title: "Head Doctor",
+    desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
+  },
+];

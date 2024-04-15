@@ -8,10 +8,7 @@ const Hero = () => {
       {/* TEXT AREA*/}
       <div className=" flex flex-col lg:flex-row lg:justify-between pt-14 lg:pt-24 mx-10 lg:mx-14">
         <div className="text-white space-y-8 pt-2">
-          <h1
-            className="text-2xl lg:text-4xl font-semibold"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h1 className="text-2xl lg:text-4xl font-semibold playfair-font">
             Transforming Care giving <br /> through data-driven AI tools
           </h1>
           <div>
