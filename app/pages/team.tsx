@@ -26,13 +26,13 @@ const Team = () => {
           {TEAM_GRID.map((team) => (
             <div
               key={team.name}
-              className="w-64 h-72 border border-2  rounded py-12 space-y-1 flex flex-col items-center "
+              className="w-64 h-72 border border-2  rounded py-12 space-y-2 flex flex-col items-center "
             >
               <Image src={team.icon} alt="team" width={32} height={32} />
               <h3 className="font-bold text-[#07001A]">{team.name}</h3>
               <p className="text-[#2937B6]">{team.title}</p>
               <p className="max-w-48 text-[#646464]">{team.desc}</p>
-              <Image src={team.logo} alt="logo" width={32} height={32} />
+              <Image src={team.logo} alt="logo" width={26} height={26} />
             </div>
           ))}
         </div>

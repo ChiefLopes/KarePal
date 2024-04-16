@@ -20,7 +20,7 @@ const Services = () => {
             key={service.title}
             className="w-64 h-72 space-y-4 rounded transition duration-300 ease-linear shadow-xl flex flex-col items-center justify-center hover:bg-[#2937B6] hover:shadow-2xl"
           >
-            <Image src={service.icon} alt="icon" width={20} height={20} />
+            <Image src={service.icon} alt="icon" width={35} height={35} />
             <h2 className="font-bold">{service.title}</h2>
             <p className="max-w-52">{service.desc}</p>
           </div>
