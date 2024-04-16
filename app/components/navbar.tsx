@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center py-4 mx-10 lg:mx-14">
       <Image src={Karepal} alt="logo" width={100} height={50} priority />
-      <div className="hidden lg:flex space-x-12 ml-[22rem]">
+      <div className="hidden lg:flex space-x-8 ml-[19.5rem]">
         {NAV_LINKS.map((link) => (
           <Link key={link.href} href={link.href} className="">
             <p className="flex">{link.label}</p>

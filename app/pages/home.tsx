@@ -1,8 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import HeroImage from "@/app/Assets/images/HomeImage.png";
+import { NAV_LINKS } from "../utils/constants";
 
 const Hero = () => {
+  
+
   return (
     <div className="bg-[#001727]">
       {/* TEXT AREA*/}

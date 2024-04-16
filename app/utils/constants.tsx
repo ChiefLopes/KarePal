@@ -30,10 +30,16 @@ export const NAV_LINKS: TYPES[] = [
     label: "Reviews",
   },
   {
+    href: "/testimonials",
+    label: "Testimonials",
+  },
+  {
     href: "/contact",
     label: "Contact Us",
   },
 ];
+
+
 
 export const SERVICE_GRID: TYPES[] = [
   {
@@ -106,5 +112,20 @@ export const TEAM_GRID: TYPES[] = [
     title: "AI Professional",
     desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
     logo: "/app/Assets/images/Linkedin.png",
+  },
+];
+
+export const FOOTER_LINKS = [
+  {
+    href: "/",
+    label: "Home",
+  },
+  {
+    href: "/services",
+    label: "Our Services",
+  },
+  {
+    href: "/about",
+    label: "About Us",
   },
 ];

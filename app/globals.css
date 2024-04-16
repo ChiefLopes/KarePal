@@ -14,3 +14,7 @@
 .playfair-font {
   font-family: "Playfair Display", serif;
 }
+
+.newsletterBg {
+    background: url("/app/Assets/images/newsletterBg.png");
+}
