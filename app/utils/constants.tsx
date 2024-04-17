@@ -129,3 +129,10 @@ export const FOOTER_LINKS = [
     label: "About Us",
   },
 ];
+
+export const SOCIAL_ICONS = [
+  {
+    label: "facebook",
+    iocn: "/"
+  }
+]
