@@ -132,7 +132,19 @@ export const FOOTER_LINKS = [
 
 export const SOCIAL_ICONS = [
   {
+    label: "twitter",
+    icon: "/TwitterWhiteIcon.png"
+  },
+  {
+    label: "linkedin",
+    icon: "/LinkedInWhiteIcon.png"
+  },
+  {
     label: "facebook",
-    iocn: "/"
-  }
+    icon: "/facebookIcon.png"
+  },
+  {
+    label: "globe",
+    icon: "/GlobeIcon.png"
+  },
 ]

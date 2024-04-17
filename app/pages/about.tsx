@@ -6,7 +6,7 @@ import PopUp from "@/app/Assets/images/PopUpGroup.png";
 const About = () => {
   return (
     <div className="bg-[#001727] mt-14 ">
-      <div className="container-lg flex text-white pt-20 space-x-12 text-xl">
+      <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-2 lg:space-y-7 flex flex-col lg:flex-row text-white pt-20 space-x-12 text-xl">
         {/* IMAGE AREA */}
         <div className="relative">
           <Image src={Doc} alt="doc" width={600} height={400} />
@@ -16,7 +16,7 @@ const About = () => {
         </div>
 
         {/* TEXT AREA */}
-        <div className="space-y-10">
+        <div className="space-y-8">
           <div className="space-y-12">
             <p className="font-bold font-md">About Us</p>
             <p
@@ -27,7 +27,7 @@ const About = () => {
               decisions.
             </p>
           </div>
-          <div className="max-w-[23rem] space-y-8 text-base ">
+          <div className="max-w-[23rem] space-y-8 text-base">
             <p>
               KarePal is your AI-powered health companion. Confused by medical
               jargon? KarePal translates it into clear, easy-to-understand

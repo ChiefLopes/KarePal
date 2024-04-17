@@ -1,5 +1,5 @@
 import React from "react";
-import { NAV_LINKS } from "../utils/constants";
+import { NAV_LINKS, SOCIAL_ICONS } from "../utils/constants";
 import Image from "next/image";
 
 const Footer = () => {
@@ -7,9 +7,9 @@ const Footer = () => {
   console.log(filtered);
   console.log("Hello");
   return (
-    <div className="bg-[#001727] lg:h-[20rem]  text-white ">
-      <div className=" mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6">
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-10">
+    <div className="bg-[#001727] h-[30rem] lg:h-[20rem] text-white ">
+      <div className=" mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-12 pt-6">
+        <div className="grid grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-10 lg:space-x-[4.2rem]">
           {/* LOGO */}
           <div className="space-y-4">
             <h1 className="font-bold text-md lg:text-lg">KarePal</h1>
@@ -62,10 +62,21 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
-          <p>© 2024G Karepal. All rights reserved.</p>
-          <div>
-            
+        <div className="flex justify-between ">
+          <p className="text-xs lg:text-base">
+            © 2024G Karepal. All rights reserved.
+          </p>
+          <div className="flex justify-center items-center mr-14 space-x-3">
+            {SOCIAL_ICONS.map((icon) => (
+              <div key={icon.label} className="">
+                <Image
+                  src={icon.icon}
+                  alt={icon.label}
+                  width={25}
+                  height={25}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

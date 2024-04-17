@@ -8,7 +8,7 @@ const Newsletter = () => {
         {/* TEXT */}
         <div className="text-center">
           <h1 className="font-bold">Newsletter</h1>
-          <p className="uppercase text-3xl lg:text-4xl">Join Us</p>
+          <p className="uppercase text-xl lg:text-4xl">Join Us</p>
           <p className="max-w-[27rem] text-sm lg:text-base">
             KarePal: Your AI medical companion, empowering informed health
             decisions.
