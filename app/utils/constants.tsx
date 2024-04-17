@@ -100,14 +100,14 @@ export const TEAM_GRID: TYPES[] = [
     logo: "/Linkedin.png",
   },
   {
-    icon: "/Avatar.png",
+    icon: "/Avatar(2).png",
     name: "Kenny Marvin",
     title: "Specialist",
     desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
     logo: "/Linkedin.png",
   },
   {
-    icon: "/Avatar.png",
+    icon: "/Avatar(3).png",
     name: "Mary Jake",
     title: "AI Professional",
     desc: "Lorem ipsum dolor sit amet consectetur. Vitae ut sagittis tincidunt et fames dui turpis.",
