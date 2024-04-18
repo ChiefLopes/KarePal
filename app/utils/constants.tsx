@@ -39,8 +39,6 @@ export const NAV_LINKS: TYPES[] = [
   },
 ];
 
-
-
 export const SERVICE_GRID: TYPES[] = [
   {
     icon: "/stethoscope.png",
@@ -133,18 +131,50 @@ export const FOOTER_LINKS = [
 export const SOCIAL_ICONS = [
   {
     label: "twitter",
-    icon: "/TwitterWhiteIcon.png"
+    icon: "/TwitterWhiteIcon.png",
   },
   {
     label: "linkedin",
-    icon: "/LinkedInWhiteIcon.png"
+    icon: "/LinkedInWhiteIcon.png",
   },
   {
     label: "facebook",
-    icon: "/facebookIcon.png"
+    icon: "/facebookIcon.png",
   },
   {
     label: "globe",
-    icon: "/GlobeIcon.png"
+    icon: "/GlobeIcon.png",
   },
-]
+];
+
+export const TESTIMONIALS = [
+  {
+    icon: "/Face.png",
+    name: "Jackson Leo",
+    title: "Founder and CEO, Supreme",
+    testimonial:
+      " Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
+  },
+  {
+    icon: "/Face.png",
+    name: "Jackson Leo",
+    title: "Founder and CEO, Supreme",
+    testimonial:
+      " Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
+  },
+  {
+    icon: "/Face.png",
+    name: "Jackson Leo",
+    title: "Founder and CEO, Supreme",
+    testimonial:
+      " Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
+  },
+  {
+    icon: "/Face.png",
+    name: "Jackson Leo",
+    title: "Founder and CEO, Supreme",
+    testimonial:
+      " Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
+  },
+
+];

@@ -5,7 +5,7 @@ import Image from "next/image";
 const Team = () => {
   return (
     <div className="">
-      <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6 h-[42rem] lg:h-[32rem]">
+      <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6 h-[42rem] md:h-[28rem] lg:h-[32rem]">
         {/* TEXT */}
         <div className="text-center space-y-2">
           <h1 className="font-bold uppercase text-[#2937B6] text-base lg:text-xl">
@@ -22,7 +22,7 @@ const Team = () => {
         </div>
 
         {/* TEAM GRID */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3">
           {TEAM_GRID.map((team) => (
             <div
               key={team.name}

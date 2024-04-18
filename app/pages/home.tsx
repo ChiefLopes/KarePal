@@ -4,12 +4,10 @@ import HeroImage from "@/app/Assets/images/HomeImage.png";
 import { NAV_LINKS } from "../utils/constants";
 
 const Hero = () => {
-  
-
   return (
     <div className="bg-[#001727]">
       {/* TEXT AREA*/}
-      <div className=" flex flex-col lg:flex-row lg:justify-between pt-14 lg:pt-24 mx-10 lg:mx-14">
+      <div className=" flex flex-col md:flex-row lg:flex-row lg:justify-between pt-7 lg:pt-24 mx-10  lg:mx-14">
         <div className="text-white space-y-8 pt-2">
           <h1 className="text-2xl lg:text-4xl font-semibold playfair-font">
             Transforming Care giving <br /> through data-driven AI tools
@@ -44,8 +42,15 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mr-44">
-          <Image src={HeroImage} alt="Hero" width={500} height={500} />
+        {/* IMAGE AREA */}
+        <div className="pt-5 lg:pt-0 lg:mr-44">
+          <Image
+            src={HeroImage}
+            alt="Hero"
+            width={500}
+            height={400}
+            // layout="responsive"
+          />
         </div>
       </div>
     </div>

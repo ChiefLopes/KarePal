@@ -18,3 +18,7 @@
 .newsletterBg {
     background: url("/app/Assets/images/newsletterBg.png");
 }
+
+.hidden {
+  display: none;
+}

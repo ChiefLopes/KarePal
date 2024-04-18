@@ -14,7 +14,7 @@ const Services = () => {
           Companion
         </p>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-4 ">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:gap-2 lg:grid-cols-4 gap-4 lg:gap-4 ">
         {SERVICE_GRID.map((service) => (
           <div
             key={service.title}
