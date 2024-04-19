@@ -55,7 +55,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="h-[27rem] lg:h-[23rem]">
+    <div className="h-[30rem] lg:h-[24rem]">
       <div className="flex flex-col items-center justify-center mx-5 lg:m-[15px] lg:ml-[4rem] space-y-4 pt-4">
         {/* TEXT */}
         <div className="text-center">
@@ -67,31 +67,33 @@ const Testimonials = () => {
 
         {/* SLIDER */}
         <div className="">
-          <Slider {...settings} className="w-[21rem] lg:w-[45rem] lg:h-[15rem]">
+          <Slider {...settings} className="w-[21rem] lg:w-[45rem] lg:h-[13rem]">
             {TESTIMONIALS.map((slide, index) => (
               <div
                 key={index}
-                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[20rem] lg:h-[18rem] rounded-lg px-5  py-5 bg-red-400"
+                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[20rem] lg:h-[18rem] rounded-lg px-5  py-3 bg-red-400"
               >
                 <div className="flex lg:flex-row justify-between ">
-                  <div className="h-[15rem] w-[12rem] text-center hidden lg:flex flex-row lg:flex-col ">
+                  <div className="h-[8rem] w-[12rem] text-center lg:flex lg:flex-col ">
                     <Image
                       src={slide.icon}
                       alt="icon"
                       width={200}
                       height={100}
                       layout="responsive"
-                      className="hidden"
+                      // className="rounded-lg md:rounded-none bg-green-400"
                     />
-                    <div className="flex flex-col ">
-                      <p className="font-bold text-xl lg:text-3xl max-w-[10rem]">
+
+                    <div className="flex flex-col">
+                      <p className="font-bold text-xl lg:text-3xl lg:max-w-[10rem]">
                         {slide.name}
                       </p>
                       <p className="text-[#2937B6]">{slide.title}</p>
                     </div>
                   </div>
 
-                  <div className="pt-32 lg:pt-20 lg:pr-10">
+                  {/* TESTIMONIAL */}
+                  <div className="pt-[9rem] lg:pt-20 lg:pr-10">
                     <Image
                       src="/OpenQoute.png"
                       alt="quote"
