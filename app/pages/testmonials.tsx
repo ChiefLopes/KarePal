@@ -10,7 +10,7 @@ const Testimonials = () => {
   const CustomPrevArrow = ({ onClick }: any) => (
     <button
       onClick={onClick}
-      className="absolute top-1/2 left-[2rem] lg:left-[-2rem] transform translate-y-1/2"
+      className="absolute top-1/2 left-0 z-40 md:left-[-2rem] transform translate-y-1/2"
     >
       <Image src="/PrevButton.png" alt="next" width={30} height={30} />
     </button>
@@ -19,9 +19,9 @@ const Testimonials = () => {
   const CustomNextArrow = ({ onClick }: any) => (
     <button
       onClick={onClick}
-      className="absolute top-1/2 right-[-2rem] transform translate-y-1/2"
+      className="absolute top-1/2 right-0 z-40 md:right-[-2rem] transform translate-y-1/2"
     >
-      <Image src="/NextButton.png" alt="next" width={30} height={30}/>
+      <Image src="/NextButton.png" alt="next" width={30} height={30} />
     </button>
   );
 
@@ -86,7 +86,7 @@ const Testimonials = () => {
             {TESTIMONIALS.map((slide, index) => (
               <div
                 key={index}
-                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[28rem] lg:h-[18rem] rounded-lg px-5  py-3 bg-red-400"
+                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[28rem] lg:h-[18rem] rounded-lg px-5  py-3 shadow-xl bg-[#FFFAFA]"
               >
                 <div className="flex flex-col lg:flex-row justify-between ">
                   <div className="h-[8rem] w-[12rem] flex flex-col items-center mx-auto text-center lg:flex lg:flex-col ">
