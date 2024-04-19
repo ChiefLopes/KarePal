@@ -7,16 +7,28 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Testimonials = () => {
-  const CustomPrevArrow = ({ onClick }) => (
-    <button onClick={onClick}>Previous</button>
+  const CustomPrevArrow = ({ onClick }: any) => (
+    <button
+      onClick={onClick}
+      className="absolute top-1/2 left-[2rem] lg:left-[-2rem] transform translate-y-1/2"
+    >
+      <Image src="/PrevButton.png" alt="next" width={30} height={30} />
+    </button>
   );
 
-  const CustomNextArrow = ({ onClick }) => (
-    <button onClick={onClick}>Next</button>
+  const CustomNextArrow = ({ onClick }: any) => (
+    <button
+      onClick={onClick}
+      className="absolute top-1/2 right-[-2rem] transform translate-y-1/2"
+    >
+      <Image src="/NextButton.png" alt="next" width={30} height={30}/>
+    </button>
   );
 
   var settings = {
     // dots: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -27,8 +39,8 @@ const Testimonials = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -36,9 +48,9 @@ const Testimonials = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
           dots: true,
         },
       },
@@ -55,7 +67,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="h-[30rem] lg:h-[24rem]">
+    <div className="h-[38rem] lg:h-[26rem] ">
       <div className="flex flex-col items-center justify-center mx-5 lg:m-[15px] lg:ml-[4rem] space-y-4 pt-4">
         {/* TEXT */}
         <div className="text-center">
@@ -67,14 +79,17 @@ const Testimonials = () => {
 
         {/* SLIDER */}
         <div className="">
-          <Slider {...settings} className="w-[21rem] lg:w-[45rem] lg:h-[13rem]">
+          <Slider
+            {...settings}
+            className="w-[21rem] md:w-[27rem] lg:w-[45rem] lg:h-[13rem]"
+          >
             {TESTIMONIALS.map((slide, index) => (
               <div
                 key={index}
-                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[20rem] lg:h-[18rem] rounded-lg px-5  py-3 bg-red-400"
+                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[28rem] lg:h-[18rem] rounded-lg px-5  py-3 bg-red-400"
               >
-                <div className="flex lg:flex-row justify-between ">
-                  <div className="h-[8rem] w-[12rem] text-center lg:flex lg:flex-col ">
+                <div className="flex flex-col lg:flex-row justify-between ">
+                  <div className="h-[8rem] w-[12rem] flex flex-col items-center mx-auto text-center lg:flex lg:flex-col ">
                     <Image
                       src={slide.icon}
                       alt="icon"
@@ -84,16 +99,14 @@ const Testimonials = () => {
                       // className="rounded-lg md:rounded-none bg-green-400"
                     />
 
-                    <div className="flex flex-col">
-                      <p className="font-bold text-xl lg:text-3xl lg:max-w-[10rem]">
-                        {slide.name}
-                      </p>
-                      <p className="text-[#2937B6]">{slide.title}</p>
-                    </div>
+                    <p className="font-bold text-xl lg:text-3xl lg:w-[20rem] lg:max-w-[10rem] grid grid-rows-1">
+                      {slide.name}
+                    </p>
+                    <p className="text-[#2937B6] w-52">{slide.title}</p>
                   </div>
 
                   {/* TESTIMONIAL */}
-                  <div className="pt-[9rem] lg:pt-20 lg:pr-10">
+                  <div className="pt-[8rem] md:mx-auto lg:pt-20 lg:pr-10">
                     <Image
                       src="/OpenQoute.png"
                       alt="quote"
