@@ -174,7 +174,7 @@ export const TESTIMONIALS = [
     name: "Jackson Leo",
     title: "Founder and CEO, Supreme",
     testimonial:
-      " Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
+      "Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
   },
 
 ];

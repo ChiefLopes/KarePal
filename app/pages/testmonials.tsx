@@ -29,11 +29,11 @@ const Testimonials = () => {
     // dots: true,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: 1,
 
     responsive: [
       {
@@ -86,7 +86,7 @@ const Testimonials = () => {
             {TESTIMONIALS.map((slide, index) => (
               <div
                 key={index}
-                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[28rem] lg:h-[18rem] rounded-lg px-5  py-3 shadow-xl bg-[#FFFAFA]"
+                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[28rem] lg:h-[18rem] rounded-lg px-5  py-3 bg-[#FFFAFA]"
               >
                 <div className="flex flex-col lg:flex-row justify-between ">
                   <div className="h-[8rem] w-[12rem] flex flex-col items-center mx-auto text-center lg:flex lg:flex-col ">

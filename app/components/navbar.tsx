@@ -1,10 +1,14 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Karepal from "@/app/Assets/images/KarepalLogo.png";
 import { NAV_LINKS } from "../utils/constants";
 import Link from "next/link";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <div className="flex items-center py-4 mx-10 lg:mx-14">
       <Image src={Karepal} alt="logo" width={100} height={50} priority />
@@ -15,9 +19,26 @@ const Navbar = () => {
           </a>
         ))}
       </div>
-      <div className="ml-8 flex space-x-10">
+      <div className="ml-8 flex space-x-8">
         <button>Sign In</button>
         <button>Sign Up</button>
+      </div>
+
+      <div
+        className="lg:hidden ml-5 font-bold text-xl cursor-pointer "
+        onClick={() => setToggleMenu(!toggleMenu)}
+      >
+        {toggleMenu ? 1 : 2}
+      </div>
+
+      <div>
+        {toggleMenu && (
+          <ul className="bg-red-500 w-32 h-32 flex flex-col pt-14 lg:hidden">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        )}
       </div>
     </div>
   );
