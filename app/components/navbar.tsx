@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="flex items-center py-4 mx-10 lg:mx-14">
+    <div className="flex items-center py-2 mx-10 lg:mx-6">
       <Image src={Karepal} alt="logo" width={100} height={50} priority />
       <div className="hidden lg:flex space-x-8 ml-[19.5rem]">
         {NAV_LINKS.map((link) => (
@@ -18,10 +18,10 @@ const Navbar = () => {
             <p className="flex">{link.label}</p>
           </a>
         ))}
-      </div>
-      <div className="ml-8 flex space-x-8">
-        <button>Sign In</button>
-        <button>Sign Up</button>
+        <div className="ml-8 flex space-x-8">
+          <button className="border w-[5rem]  rounded">Sign In</button>
+          <button>Sign Up</button>
+        </div>
       </div>
 
       <div

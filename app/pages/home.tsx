@@ -5,10 +5,10 @@ import { NAV_LINKS } from "../utils/constants";
 
 const Hero = () => {
   return (
-    <div className="bg-[#001727]">
+    <div className="bg-[#001727] lg:h-[31.5rem]">
       {/* TEXT AREA*/}
-      <div className=" flex flex-col md:flex-row lg:flex-row lg:justify-between pt-7 lg:pt-24 mx-10  lg:mx-14">
-        <div className="text-white space-y-8 pt-2">
+      <div className="flex flex-col md:flex-row lg:flex-row lg:justify-between pt-7 lg:pt-20 mx-10 lg:mx-14 lg:space-x-6">
+        <div className="text-white space-y-6 lg:space-y-12 pt-2">
           <h1 className="text-2xl lg:text-4xl font-semibold playfair-font">
             Transforming Care giving <br /> through data-driven AI tools
           </h1>
@@ -43,11 +43,11 @@ const Hero = () => {
         </div>
 
         {/* IMAGE AREA */}
-        <div className="pt-5 lg:pt-0 lg:mr-44">
+        <div className="pt-5 lg:pt-0 lg:mr-40">
           <Image
             src={HeroImage}
             alt="Hero"
-            width={500}
+            width={700}
             height={400}
             // layout="responsive"
           />
