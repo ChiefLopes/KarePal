@@ -2,7 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import Hero from "./pages/home";
 import Services from "./pages/services";
-import About from "./pages/about"
+import About from "./pages/about";
 import Team from "./pages/team";
 import Newsletter from "./pages/newsletter";
 import Testimonials from "./pages/testmonials";
@@ -14,7 +14,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
-      <About />
+      <div id="/about">
+        <About />
+      </div>
       <Team />
       <Newsletter />
       <Testimonials />
