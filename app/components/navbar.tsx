@@ -4,8 +4,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Karepal from "@/app/Assets/images/KarepalLogo.png";
 import { NAV_LINKS } from "../utils/constants";
-import { Link } from "react-scroll";
-
+import Link from "next/link";
+// import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -21,16 +21,9 @@ const Navbar = () => {
         className="lg:ml-9 cursor-pointer"
       />
 
-      <div className="hidden lg:flex space-x-8 pl-[14rem] lg:pt-4 ">
+      <div className="hidden text-sm lg:flex space-x-8 pl-[14rem] lg:pt-4 ">
         {NAV_LINKS.map((link) => (
-          <Link
-            to={link.href}
-            key={link.href}
-            href={link.href}
-            smooth={true}
-            duration={500}
-            className="pt-2"
-          >
+          <Link key={link.href} href={link.href} className="pt-2">
             <p className="flex">{link.label}</p>
           </Link>
         ))}
@@ -55,7 +48,7 @@ const Navbar = () => {
         {toggleMenu ? 1 : 2}
       </div>
 
-      <div className="relative ">
+      <div className="relative">
         {toggleMenu && (
           <div
             className={`bg-white text-[#001727] w-[13rem] h-[17rem] mt-[8rem] px-4 z-40 flex flex-col lg:hidden relative right-12 top-20 rounded-s-lg ${

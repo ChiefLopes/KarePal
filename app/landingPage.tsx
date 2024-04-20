@@ -1,4 +1,3 @@
-import LandingPage from "./landingPage";
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import Hero from "./pages/home";
@@ -9,17 +8,32 @@ import Newsletter from "./pages/newsletter";
 import Testimonials from "./pages/testmonials";
 import Footer from "./pages/footer";
 
-export default function Home() {
+const LandingPage = () => {
   return (
     <div className="bg-slate-100">
       <Navbar />
-      <Hero />
-      <Services />
-      <About />
-      <Team />
-      <Newsletter />
-      <Testimonials />
+
+      <div>
+        <Hero />
+      </div>
+      <div>
+        <Services />
+      </div>
+      <div id="/about">
+        <About />
+      </div>
+      <div id="/team">
+        <Team />
+      </div>
+      <div id="/newsletter">
+        <Newsletter />
+      </div>
+      <div >
+        <Testimonials />
+      </div>
       <Footer />
     </div>
   );
-}
+};
+
+export default LandingPage;
