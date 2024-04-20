@@ -8,13 +8,13 @@ const About = () => {
     <div className="bg-[#001727] mt-8 lg:mt-14 h-[57rem] lg:h-[36rem]">
       <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-2 lg:space-y-7 flex flex-col lg:flex-row text-white pt-10 lg:pt-[5.3rem] space-x-2 lg:space-x-12 text-xl">
         {/* IMAGE AREA */}
-        <div className="relative flex items-center justify-center md:hidden">
+        <div className="relative flex items-center justify-center md:hidden lg:block">
           <Image
             src={Doc}
             alt="doc"
             width={600}
             height={400}
-            className="md:w-60"
+          
           />
           <div className="absolute bottom-6 lg:bottom-44 lg:left-[17rem] hidden lg:block">
             <Image src={PopUp} alt="doc" width={300} height={400} />
