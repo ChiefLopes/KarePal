@@ -5,8 +5,8 @@ import { Link as Scrollink } from "react-scroll";
 
 const Footer = () => {
   const filtered = NAV_LINKS.filter((item) => item.href !== "/review");
-  console.log(filtered);
-  console.log("Hello");
+  // console.log(filtered);
+  // console.log("Hello");
   return (
     <div className="bg-[#001727] h-[30rem] lg:h-[20rem] text-white ">
       <div className=" mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-12 pt-6">
@@ -22,16 +22,12 @@ const Footer = () => {
             <p className="text-[#2937B6] text-sm">Products</p>
             <div className="space-y-2">
               {filtered.map((item) => (
-                <Scrollink
-                  to={item.href}
-                  smooth={true}
-                  duration={500}
-                  key={item.href}
-                >
+                
+                <div key={item.href}>
                   <a href={item.href} className="text-sm lg:text-base">
                     {item.label}
                   </a>
-                </Scrollink>
+                </div>
               ))}
             </div>
           </div>
