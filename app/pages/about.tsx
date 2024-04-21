@@ -9,13 +9,7 @@ const About = () => {
       <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-2 lg:space-y-4 flex flex-col lg:flex-row text-white pt-4 lg:pt-[5.3rem] space-x-2 lg:space-x-12 text-xl">
         {/* IMAGE AREA */}
         <div className="relative flex items-center justify-center md:hidden lg:block">
-          <Image
-            src={Doc}
-            alt="doc"
-            width={600}
-            height={400}
-          
-          />
+          <Image src={Doc} alt="doc" width={600} height={400} />
           <div className="absolute bottom-6 lg:bottom-44 lg:left-[17rem] hidden lg:block">
             <Image src={PopUp} alt="doc" width={300} height={400} />
           </div>
@@ -33,7 +27,7 @@ const About = () => {
               decisions.
             </p>
           </div>
-          <div className="max-w-[18rem] lg:max-w-[23rem] space-y-5 text-base">
+          <div className="max-w-[18rem] lg:max-w-[24rem] space-y-5 text-base lg:text-sm">
             <p>
               KarePal is your AI-powered health companion. Confused by medical
               jargon? KarePal translates it into clear, easy-to-understand
