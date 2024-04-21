@@ -72,7 +72,7 @@ const Testimonials = () => {
         {/* TEXT */}
         <div className="text-center">
           <h1 className="text-[#2937B6] font-bold">Testimonials</h1>
-          <p className="text-2xl font-semibold text-[#07001A] playfair-font">
+          <p className="text-lg lg:text-2xl font-semibold text-[#07001A] playfair-font">
             Stories of success and satisfaction
           </p>
         </div>

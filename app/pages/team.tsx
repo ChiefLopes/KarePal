@@ -14,7 +14,7 @@ const Team = () => {
           <h2 className="playfair-font font-semibold text-2xl">
             Meet the Brilliant Minds:
           </h2>
-          <p className="max-w-[32rem] mx-auto text-sm lg:text-base ">
+          <p className="max-w-[37rem] mx-auto text-sm lg:text-base">
             Empower yourself with KarePal, your AI healthcare guide! Join
             millions on a journey to better health through interactive learning
             and personalized insights.
