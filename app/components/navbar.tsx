@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="hidden text-sm lg:flex space-x-8 pl-[14rem] lg:pt-4 ">
         {NAV_LINKS.map((link) => (
           <Scrollink
-            to={link.href}
+            to={link.href || ""}
             smooth={true}
             duration={500}
             key={link.href}
