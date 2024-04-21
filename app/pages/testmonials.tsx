@@ -2,6 +2,7 @@
 import React from "react";
 import { TESTIMONIALS } from "../utils/constants";
 import Image from "next/image";
+import { Rubik } from "next/font/google";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -99,10 +100,12 @@ const Testimonials = () => {
                       // className="rounded-lg md:rounded-none bg-green-400"
                     />
 
-                    <p className="font-bold text-xl lg:text-3xl lg:w-[20rem] lg:max-w-[10rem] grid grid-rows-1">
+                    <p className="text-base lg:text-2xl lg:w-[20rem] lg:max-w-[10rem] font-rubik">
                       {slide.name}
                     </p>
-                    <p className="text-[#2937B6] w-52">{slide.title}</p>
+                    <p className="text-[#2937B6] w-52 text-sm">
+                      {slide.title}
+                    </p>
                   </div>
 
                   {/* TESTIMONIAL */}
