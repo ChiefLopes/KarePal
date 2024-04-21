@@ -9,7 +9,7 @@ import { Link as Scrollink} from "react-scroll";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  
+
   return (
     <div className="h-[4rem] flex items-center py-3 mx-10 lg:mx-6">
       <Image
@@ -55,6 +55,8 @@ const Navbar = () => {
         {toggleMenu ? 1 : 2}
       </div>
 
+      
+      {/* FOR MOBILE */}
       <div className="relative">
         {toggleMenu && (
           <div
@@ -70,7 +72,7 @@ const Navbar = () => {
             </div>
             <div className="">
               {NAV_LINKS.map((nav, index) => (
-                <Link
+                <Scrollink
                   to={nav.href}
                   smooth={true}
                   duration={500}
@@ -81,7 +83,7 @@ const Navbar = () => {
                   <p className="font-bold py-1 hover:text-red-400">
                     {nav.label}
                   </p>
-                </Link>
+                </Scrollink>
               ))}
             </div>
           </div>

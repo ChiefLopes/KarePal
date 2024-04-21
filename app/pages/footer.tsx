@@ -1,6 +1,7 @@
 import React from "react";
 import { NAV_LINKS, SOCIAL_ICONS } from "../utils/constants";
 import Image from "next/image";
+import { Link as Scrollink } from "react-scroll";
 
 const Footer = () => {
   const filtered = NAV_LINKS.filter((item) => item.href !== "/review");
@@ -21,11 +22,16 @@ const Footer = () => {
             <p className="text-[#2937B6] text-sm">Products</p>
             <div className="space-y-2">
               {filtered.map((item) => (
-                <div key={item.href}>
+                <Scrollink
+                  to={item.href}
+                  smooth={true}
+                  duration={500}
+                  key={item.href}
+                >
                   <a href={item.href} className="text-sm lg:text-base">
                     {item.label}
                   </a>
-                </div>
+                </Scrollink>
               ))}
             </div>
           </div>
