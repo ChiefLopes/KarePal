@@ -11,15 +11,8 @@ import Footer from "./pages/footer";
 
 export default function Home() {
   return (
-    <div className="bg-slate-100">
-      <Navbar />
-      <Hero />
-      <Services />
-      <About />
-      <Team />
-      <Newsletter />
-      <Testimonials />
-      <Footer />
+    <div >
+      <LandingPage />
     </div>
   );
 }

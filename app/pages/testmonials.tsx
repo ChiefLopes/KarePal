@@ -109,7 +109,7 @@ const Testimonials = () => {
                   </div>
 
                   {/* TESTIMONIAL */}
-                  <div className="pt-[8rem] md:mx-auto lg:pt-20 lg:pr-10">
+                  <div className="pt-[8rem] md:mx-auto lg:mx-5 lg:pt-20 lg:pr-10">
                     <Image
                       src="/OpenQoute.png"
                       alt="quote"
