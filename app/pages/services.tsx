@@ -1,8 +1,7 @@
 import React from "react";
 import { SERVICE_GRID } from "../utils/constants";
 import Image from "next/image";
-import Steto from "@/public/stethoscope.png"
-
+import Steto from "@/public/stethoscope.png";
 
 const Services = () => {
   return (
@@ -23,8 +22,8 @@ const Services = () => {
             className="w-44 h-48 px-2 lg:px-0 lg:w-64 lg:h-72 space-y-1 lg:space-y-4 rounded transition duration-300 ease-linear shadow-xl flex flex-col items-center justify-center hover:bg-[#2937B6] hover:shadow-2xl hover:text-white"
           >
             <Image src={service.icon || ""} alt="icon" width={35} height={35} />
-            <h2 className="font-bold">{service.title}</h2>
-            <p className="lg:max-w-52 text-xs lg:text-[16px] lg:leading-6">
+            <h2 className="font-bold lg:text-lg">{service.title}</h2>
+            <p className="lg:max-w-52 text-xs lg:text-[13px] lg:leading-6 ">
               {service.desc}
             </p>
           </div>
