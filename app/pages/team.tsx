@@ -30,7 +30,10 @@ const Team = () => {
               key={team.name}
               className="w-44 h-[15rem] px-4 lg:px-0 lg:w-64 lg:h-72 space-y-1 lg:space-y-2 border border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
             >
-              <Image src={team.icon!} alt="team" width={62} height={62} />
+              {team.icon ? (
+                <Image src={team.icon} alt="team" width={62} height={62} />
+              ) : null}
+
               <h3 className="font-bold text-[#07001A]">{team.name}</h3>
               <p className="text-[#2937B6] text-sm md:text-base">
                 {team.title}
