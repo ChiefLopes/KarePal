@@ -5,8 +5,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.container-sm {
+::-webkit-scrollbar {
+  width: 12px;
 }
+
+::-webkit-scrollbar-track {
+  width: 1px;
+  background-color:  rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #001727;
+  border-radius: 6px;
+}
+
 .container-lg {
   margin: 15px;
   margin-left: 4rem;

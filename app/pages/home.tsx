@@ -5,9 +5,9 @@ import { NAV_LINKS } from "../utils/constants";
 
 const Hero = () => {
   return (
-    <div className="bg-[#001727] lg:h-[31.5rem]">
+    <div className="bg-[#001727] h-screen lg:h-[38.6rem]">
       {/* TEXT AREA*/}
-      <div className="flex flex-col md:flex-row lg:flex-row lg:justify-between pt-7 lg:pt-20 mx-10 lg:mx-14 lg:space-x-6">
+      <div className="flex flex-col md:flex-row lg:flex-row lg:justify-between pt-[5.6rem] lg:pt-[12rem] mx-10 lg:mx-14 lg:space-x-6">
         <div className="text-white space-y-6 lg:space-y-12 pt-2">
           <h1 className="text-2xl lg:text-4xl font-semibold playfair-font">
             Transforming Care giving <br /> through data-driven AI tools

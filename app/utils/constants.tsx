@@ -30,7 +30,7 @@ export const NAV_LINKS: TYPES[] = [
     label: "Reviews",
   },
   {
-    href: "/#testimonials",
+    href: "/testimonials",
     label: "Testimonials",
   },
   {
