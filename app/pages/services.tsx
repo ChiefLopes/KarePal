@@ -12,7 +12,7 @@ const Services = () => {
         <h1 className="text-xl font-semibold text-[#2937B6] ">Our Services</h1>
       </div>
       <div className="text-center">
-        <p className="text-md lg:text-3xl font-semibold text-[#07001A] playfair-font">
+        <p className="text-sm lg:text-3xl font-semibold text-[#07001A] playfair-font">
           Embark on a Health Journey Guided by KarePal, <br /> Your AI Medical
           Companion
         </p>
