@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { SERVICE_GRID } from "../utils/constants";
 import Image from "next/image";

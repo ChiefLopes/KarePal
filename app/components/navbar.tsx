@@ -6,19 +6,20 @@ import Karepal from "@/app/Assets/images/KarepalLogo.png";
 import { NAV_LINKS } from "../utils/constants";
 // import Link from "next/link";
 import { Link as Scrollink } from "react-scroll";
+import Buttons from "./buttons";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="h-[3rem] mt-4 flex items-center pb-3 mx-10 lg:mx-6 pr-14 rounded-2xl fixed bg-slate-100 z-50 lg:w-[81rem]">
+    <div className="h-[3rem] mt-4 flex items-center pb-3 mx-4 lg:mx-6 rounded-2xl fixed bg-slate-50  z-50 w-[20rem] lg:w-[81rem] ">
       <Image
         src={Karepal}
         alt="logo"
         width={100}
         height={50}
         priority
-        className="lg:ml-9 cursor-pointer pt-1 w-20 md:w-28"
+        className="lg:ml-[1.85rem] ml-6 cursor-pointer pt-1 w-20 md:w-28"
       />
 
       <div className="hidden text-sm lg:flex space-x-8 pl-[12rem] lg:pt-4 ">
@@ -34,18 +35,12 @@ const Navbar = () => {
             <a className="flex">{link.label}</a>
           </Scrollink>
         ))}
-        <div className=" flex space-x-5 pb-1">
-          <button className="border w-[6rem] h-9 rounded-lg border-[#2937B6] hover:bg-[#2937B6] hover:text-white transition duration-200">
-            Sign In
-          </button>
-          <button className="border w-[6rem] h-9 rounded-lg bg-[#2937B6] text-white hover:bg-transparent hover:text-black hover:border-[#2937b6] transition duration-200">
-            Sign Up
-          </button>
-        </div>
+
+        <Buttons />
       </div>
 
       <div
-        className={`lg:hidden ml-5 font-bold text-xl cursor-pointer ${
+        className={`lg:hidden ml-10 font-bold text-xl cursor-pointer ${
           toggleMenu
             ? "transition-opacity ease-out duration-300 opacity-100"
             : "transition-opacity ease-in duration-300 opacity-100 hover:opacity-50"
@@ -59,7 +54,7 @@ const Navbar = () => {
       <div className="relative">
         {toggleMenu && (
           <div
-            className={`bg-white text-[#001727] w-[13rem] h-[17rem] mt-[8rem] px-4 z-40 flex flex-col lg:hidden relative right-12 top-20 rounded-s-lg ${
+            className={`bg-white text-[#001727] w-[14rem] h-[20rem] mt-[8rem] px-4 z-40 flex flex-col lg:hidden relative right-12 top-20 rounded-s-lg ${
               toggleMenu ? "" : ""
             }`}
           >
@@ -84,6 +79,7 @@ const Navbar = () => {
                   </p>
                 </Scrollink>
               ))}
+              <Buttons />
             </div>
           </div>
         )}
