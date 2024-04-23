@@ -87,25 +87,25 @@ const Testimonials = () => {
             {TESTIMONIALS.map((slide, index) => (
               <div
                 key={index}
-                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[28rem] lg:h-[18rem] rounded-lg px-5  py-3 bg-[#FFFAFA]"
+                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[28rem] lg:h-[18rem] rounded-lg px-5 py-3 bg-[#FFFAFA]"
               >
                 <div className="flex flex-col lg:flex-row justify-between ">
                   <div className="h-[8rem] w-[12rem] flex flex-col items-center mx-auto text-center lg:flex lg:flex-col ">
-                    <Image
-                      src={slide.icon}
-                      alt="icon"
-                      width={200}
-                      height={100}
-                      layout="responsive"
-                      // className="rounded-lg md:rounded-none bg-green-400"
-                    />
+                    {slide.icon ? (
+                      <Image
+                        src={slide.icon}
+                        alt="icon"
+                        width={200}
+                        height={100}
+                        layout="responsive"
+                        // className="rounded-lg md:rounded-none bg-green-400"
+                      />
+                    ) : null}
 
                     <p className="text-base lg:text-2xl lg:w-[20rem] lg:max-w-[10rem] font-rubik">
                       {slide.name}
                     </p>
-                    <p className="text-[#2937B6] w-52 text-sm">
-                      {slide.title}
-                    </p>
+                    <p className="text-[#2937B6] w-52 text-sm">{slide.title}</p>
                   </div>
 
                   {/* TESTIMONIAL */}

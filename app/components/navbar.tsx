@@ -48,11 +48,11 @@ const Navbar = () => {
         }`}
         onClick={() => setToggleMenu(!toggleMenu)}
       >
-        {toggleMenu ? 1 : <IoMenu className="mt-3 ml-12" />}
+        {toggleMenu ? 1 : <IoMenu className="mt-3 ml-24 " />}
       </div>
 
       {/* FOR MOBILE */}
-      <div className="relative">
+      <div className="relative space-y-8 ">
         {toggleMenu && (
           <div
             className={`bg-white text-[#001727] w-[14rem] h-[20rem] mt-[8rem] px-4 z-40 flex flex-col lg:hidden relative right-12 top-20 rounded-s-lg ${
@@ -65,7 +65,7 @@ const Navbar = () => {
             >
               X
             </div>
-            <div className="">
+            <div className="space-y-4">
               {NAV_LINKS.map((nav, index) => (
                 <Scrollink
                   to={nav.href}
@@ -73,13 +73,14 @@ const Navbar = () => {
                   duration={500}
                   href={nav.href}
                   key={index}
-                  className="space-y-4"
+                  className="space-y-8"
                 >
                   <p className="font-bold py-1 hover:text-red-400">
                     {nav.label}
                   </p>
                 </Scrollink>
               ))}
+
               <Buttons />
             </div>
           </div>
