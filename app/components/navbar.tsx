@@ -48,7 +48,7 @@ const Navbar = () => {
         }`}
         onClick={() => setToggleMenu(!toggleMenu)}
       >
-        {toggleMenu ? 1 : <IoMenu className="mt-4 ml-12" />}
+        {toggleMenu ? 1 : <IoMenu className="mt-3 ml-12" />}
       </div>
 
       {/* FOR MOBILE */}
