@@ -7,7 +7,7 @@ import Image from "next/image";
 const Team = () => {
   return (
     <div className="">
-      <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6 h-[44rem] md:h-[28rem] lg:h-[32rem]">
+      <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6 h-[46rem] md:h-[28rem] lg:h-[32rem]">
         {/* TEXT */}
         <div className="text-center space-y-2">
           <h1 className="font-bold uppercase text-[#2937B6] text-base lg:text-xl">
@@ -28,7 +28,7 @@ const Team = () => {
           {TEAM_GRID.map((team: any) => (
             <div
               key={team.name}
-              className="w-40 h-[15rem] px-4 lg:px-0 lg:w-64 lg:h-72 space-y-1 lg:space-y-2 border border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
+              className="w-40 h-[16rem] px-4 lg:px-0 lg:w-64 lg:h-72 space-y-1 lg:space-y-2 border border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
             >
               {team.icon ? (
                 <Image src={team.icon} alt="team" width={62} height={62} />
