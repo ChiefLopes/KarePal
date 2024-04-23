@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Karepal from "@/app/Assets/images/KarepalLogo.png";
 import { NAV_LINKS } from "../utils/constants";
+import { IoMenu } from "react-icons/io5";
 // import Link from "next/link";
 import { Link as Scrollink } from "react-scroll";
 import Buttons from "./buttons";
@@ -12,7 +13,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="h-[3rem] mt-4 flex items-center pb-3 mx-4 lg:mx-6 rounded-2xl fixed bg-slate-50  z-50 w-[20rem] lg:w-[81rem] ">
+    <div className="h-[3rem] mt-4 flex items-center justify-between pb-3 mx-4 lg:mx-6 rounded-2xl fixed bg-slate-50  z-50 w-[20rem] lg:w-[81rem] ">
       <Image
         src={Karepal}
         alt="logo"
@@ -47,7 +48,7 @@ const Navbar = () => {
         }`}
         onClick={() => setToggleMenu(!toggleMenu)}
       >
-        {toggleMenu ? 1 : 2}
+        {toggleMenu ? 1 : <IoMenu className="mt-4 ml-12" />}
       </div>
 
       {/* FOR MOBILE */}

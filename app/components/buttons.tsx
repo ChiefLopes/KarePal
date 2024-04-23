@@ -3,7 +3,7 @@ import { useState } from "react";
 const Buttons = () => {
   type btn = boolean | string;
 
-  const [btn, setBtn] = useState<btn>(true);
+  const [btn, setBtn] = useState<btn>(false);
 //   const [color, setColor] = useState<btn>("blue");
 
 //   const handleChange = () => {
