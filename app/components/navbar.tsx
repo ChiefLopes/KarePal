@@ -30,8 +30,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             key={link.href}
-            href={link.href}
-            className="pt-2 "
+            className="pt-2 cursor-pointer"
           >
             <a className="flex">{link.label}</a>
           </Scrollink>

@@ -12,9 +12,7 @@ import Footer from "./pages/footer";
 export default function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
       <LandingPage />
-      {/* <Footer /> */}
     </div>
   );
 }

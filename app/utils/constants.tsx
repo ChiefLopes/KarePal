@@ -14,7 +14,7 @@ export const NAV_LINKS: TYPES[] = [
     label: "Home",
   },
   {
-    href: "/services",
+    href: "/service",
     label: "Our Services",
   },
   {
@@ -26,11 +26,11 @@ export const NAV_LINKS: TYPES[] = [
     label: "Our Team",
   },
   {
-    href: "/review",
-    label: "Reviews",
+    href: "/newsletter",
+    label: "Newsletter",
   },
   {
-    href: "/testimonials",
+    href: "/testimonial",
     label: "Testimonials",
   },
   {
