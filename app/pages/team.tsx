@@ -28,7 +28,7 @@ const Team = () => {
           {TEAM_GRID.map((team: any) => (
             <div
               key={team.name}
-              className="w-40 h-[16.5rem] px-4 lg:px-0 lg:w-64 lg:h-[18rem] space-y-1 lg:space-y-2 border border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
+              className="w-40 h-[16.5rem] px-4 lg:px-0 lg:w-64 lg:h-[19rem] space-y-1 lg:space-y-2 border border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
             >
               {team.icon ? (
                 <Image src={team.icon} alt="team" width={62} height={62} />
