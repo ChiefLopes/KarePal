@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { NAV_LINKS, SOCIAL_ICONS } from "../utils/constants";
 import Image from "next/image";
@@ -20,13 +22,16 @@ const Footer = () => {
           {/* PRODUCTS */}
           <div className="space-y-2">
             <p className="text-[#2937B6] text-sm">Products</p>
-            <div className="space-y-2">
+            <div className="space-y-2 flex flex-col">
               {filtered.map((item) => (
-                <div key={item.href}>
-                  <a href={item.href} className="text-sm lg:text-base">
-                    {item.label}
-                  </a>
-                </div>
+                <Scrollink
+                  key={item.href}
+                  to={item.href}
+                  smooth={true}
+                  duration={500}
+                >
+                  <a className="text-sm lg:text-base">{item.label}</a>
+                </Scrollink>
               ))}
             </div>
           </div>
