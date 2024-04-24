@@ -22,7 +22,7 @@ const Footer = () => {
           {/* PRODUCTS */}
           <div className="space-y-2">
             <p className="text-[#2937B6] text-sm">Products</p>
-            <div className="space-y-2 flex flex-col">
+            <div className="space-y-2 flex flex-col cursor-pointer">
               {filtered.map((item) => (
                 <Scrollink
                   key={item.href}
