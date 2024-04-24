@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { SERVICE_GRID } from "../utils/constants";
@@ -25,7 +25,7 @@ const Services = () => {
           >
             <Image src={service.icon || ""} alt="icon" width={35} height={35} />
             <h2 className="font-bold lg:text-lg ">{service.title}</h2>
-            <p className="lg:max-w-52 text-xs lg:text-[13px] lg:leading-6 ">
+            <p className="lg:max-w-52 text-xs lg:text-[13px] lg:leading-6 lg:mx-6">
               {service.desc}
             </p>
           </div>

@@ -28,7 +28,7 @@ const Team = () => {
           {TEAM_GRID.map((team: any) => (
             <div
               key={team.name}
-              className="w-40 h-[16rem] px-4 lg:px-0 lg:w-64 lg:h-72 space-y-1 lg:space-y-2 border border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
+              className="w-40 h-[16.5rem] px-4 lg:px-0 lg:w-64 lg:h-[18rem] space-y-1 lg:space-y-2 border border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
             >
               {team.icon ? (
                 <Image src={team.icon} alt="team" width={62} height={62} />
@@ -38,10 +38,16 @@ const Team = () => {
               <p className="text-[#2937B6] text-sm md:text-base">
                 {team.title}
               </p>
-              <p className="text-xs lg:text-base max-w-48 text-[#646464]">
+              <p className="text-xs lg:text-base max-w-[14rem] text-[#646464] lg:mx-5">
                 {team.desc}
               </p>
-              <Image src={team.logo} alt="logo" width={26} height={26} />
+              <Image
+                src={team.logo}
+                alt="logo"
+                width={26}
+                height={26}
+                className="pt-1 lg:pt-2"
+              />
             </div>
           ))}
         </div>
