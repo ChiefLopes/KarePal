@@ -12,7 +12,7 @@ const Services = () => {
         <h1 className="text-xl font-semibold text-[#2937B6] ">Our Services</h1>
       </div>
       <div className="text-center">
-        <p className="text-sm` lg:text-3xl font-semibold text-[#07001A] playfair-font">
+        <p className="text-sm lg:text-3xl font-semibold text-[#07001A] playfair-font">
           Embark on a Health Journey Guided by KarePal, <br /> Your AI Medical
           Companion
         </p>
@@ -24,7 +24,7 @@ const Services = () => {
             className="w-40 h-48 px-2 lg:px-0 lg:w-64 lg:h-72 space-y-1 lg:space-y-4 rounded transition duration-300 ease-linear shadow-xl flex flex-col items-center justify-center hover:bg-[#2937B6] hover:shadow-2xl hover:text-white"
           >
             <Image src={service.icon || ""} alt="icon" width={35} height={35} />
-            <h2 className="font-bold lg:text-lg ">{service.title}</h2>
+            <h2 className="font-bold text-sm lg:text-lg ">{service.title}</h2>
             <p className="lg:max-w-52 text-xs lg:text-[13px] lg:leading-6 lg:mx-6">
               {service.desc}
             </p>
