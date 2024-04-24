@@ -109,8 +109,9 @@ const Testimonials = () => {
                       alt="icon"
                       width={200}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       // className="rounded-lg md:rounded-none bg-green-400"
+                      className="block"
                     />
                     {/* ) : null} */}
 
