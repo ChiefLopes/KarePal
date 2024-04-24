@@ -8,7 +8,7 @@ const Footer = () => {
   // console.log(filtered);
   // console.log("Hello");
   return (
-    <div className="bg-[#001727] h-[30rem] lg:h-[20rem] text-white ">
+    <div className="bg-[#001727] h-[32rem] lg:h-[20rem] text-white ">
       <div className=" mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-12 pt-6">
         <div className="grid grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-10 lg:space-x-[4.2rem]">
           {/* LOGO */}
