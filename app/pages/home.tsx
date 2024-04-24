@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
 
         {/* IMAGE AREA */}
-        <div className="pt-5 lg:pt-0 lg:mr-40">
+        <div className="pt-5 lg:pt-0 mr-14 lg:mr-40">
           <Image
             src={HeroImage}
             alt="Hero"
