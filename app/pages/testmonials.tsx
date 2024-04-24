@@ -11,18 +11,18 @@ const Testimonials = () => {
   const CustomPrevArrow = ({ onClick }: any) => (
     <button
       onClick={onClick}
-      className="absolute top-1/2 left-0 z-40 md:left-[-2rem] transform translate-y-1/2"
+      className="absolute top-1/2 left-[-3rem] z-40 md:left-[-3.5rem] transform translate-y-1/2"
     >
-      <Image src="/PrevButton.png" alt="next" width={30} height={30} />
+      <Image src="/PrevButton.png" alt="next" width={50} height={50} />
     </button>
   );
 
   const CustomNextArrow = ({ onClick }: any) => (
     <button
       onClick={onClick}
-      className="absolute top-1/2 right-0 z-40 md:right-[-2rem] transform translate-y-1/2"
+      className="absolute top-1/2 right-[-3.2rem] z-40 md:right-[-3.5rem] transform translate-y-1/2"
     >
-      <Image src="/NextButton.png" alt="next" width={30} height={30} />
+      <Image src="/NextButton.png" alt="next" width={50} height={50} />
     </button>
   );
 
