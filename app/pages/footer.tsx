@@ -8,7 +8,7 @@ const Footer = () => {
   // console.log(filtered);
   // console.log("Hello");
   return (
-    <div className="bg-[#001727] h-[32rem] lg:h-[20rem] text-white ">
+    <div className="bg-[#001727] h-[32rem] lg:h-[22rem] text-white text-sm">
       <div className=" mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-12 pt-6">
         <div className="grid grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-10 lg:space-x-[4.2rem]">
           {/* LOGO */}
@@ -22,7 +22,6 @@ const Footer = () => {
             <p className="text-[#2937B6] text-sm">Products</p>
             <div className="space-y-2">
               {filtered.map((item) => (
-                
                 <div key={item.href}>
                   <a href={item.href} className="text-sm lg:text-base">
                     {item.label}
@@ -58,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 mt-20">
+          <div className="flex flex-col gap-2 mt-14 lg:mt-24">
             <Image src="/App_Store.png" alt="" width={100} height={50} />
             <Image src="/Google.png" alt="" width={100} height={50} />
           </div>
