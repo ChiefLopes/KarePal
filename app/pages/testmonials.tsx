@@ -82,25 +82,25 @@ const Testimonials = () => {
         <div className="">
           <Slider
             {...settings}
-            className="w-[21rem] md:w-[27rem] lg:w-[45rem] lg:h-[13rem]"
+            className="w-[17rem] md:w-[27rem] lg:w-[45rem] lg:h-[13rem]"
           >
             {TESTIMONIALS.map((slide, index) => (
               <div
                 key={index}
-                className="space-x-2 border w-[14rem] lg:w-[37rem] h-[28rem] lg:h-[18rem] rounded-lg px-5 py-3 bg-[#FFFAFA]"
+                className="space-x-2 border-2 w-[14rem] lg:w-[37rem] h-[29rem] lg:h-[18rem] rounded-lg px-5 py-4 bg-[#FFFAFA] "
               >
                 <div className="flex flex-col lg:flex-row justify-between ">
-                  <div className="h-[8rem] w-[12rem] flex flex-col items-center mx-auto text-center lg:flex lg:flex-col ">
-                    {slide.icon ? (
-                      <Image
-                        src={slide.icon}
-                        alt="icon"
-                        width={200}
-                        height={100}
-                        layout="responsive"
-                        // className="rounded-lg md:rounded-none bg-green-400"
-                      />
-                    ) : null}
+                  <div className="h-[8rem] w-[12rem] flex flex-col items-center mx-auto text-center lg:flex lg:flex-col">
+                    {/* {slide.icon ? ( */}
+                    <Image
+                      src={slide.icon}
+                      alt="icon"
+                      width={200}
+                      height={100}
+                      layout="responsive"
+                      // className="rounded-lg md:rounded-none bg-green-400"
+                    />
+                    {/* ) : null} */}
 
                     <p className="text-base lg:text-2xl lg:w-[20rem] lg:max-w-[10rem] font-rubik">
                       {slide.name}
@@ -125,7 +125,7 @@ const Testimonials = () => {
                       alt="quote"
                       width={35}
                       height={35}
-                      className="ml-[15rem] lg:ml-[25rem] mb-2"
+                      className="ml-[12rem] lg:ml-[25rem] mb-2"
                     />
                   </div>
                 </div>
