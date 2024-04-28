@@ -73,6 +73,7 @@ const Navbar = () => {
                   href={nav.href}
                   key={index}
                   className="space-y-8"
+                  onClick={() => setToggleMenu((false))}
                 >
                   <p className="font-bold py-1 hover:text-red-400">
                     {nav.label}

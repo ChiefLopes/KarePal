@@ -80,7 +80,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="h-[38rem] lg:h-[26rem] ">
+    <div className="h-[38rem] lg:h-[26rem]">
       <div className="flex flex-col items-center justify-center mx-5 lg:m-[15px] lg:ml-[4rem] space-y-4 pt-4">
         {/* TEXT */}
         <div className="text-center">
@@ -115,7 +115,7 @@ const Testimonials = () => {
                     />
                     {/* ) : null} */}
 
-                    <p className="text-base lg:text-2xl lg:w-[20rem] lg:max-w-[10rem] font-rubik">
+                    <p className="text-base lg:text-xl lg:w-[20rem] lg:max-w-[10rem] font-rubik">
                       {slide.name}
                     </p>
                     <p className="text-[#2937B6] w-52 text-sm">{slide.title}</p>

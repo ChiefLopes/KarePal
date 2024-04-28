@@ -158,21 +158,21 @@ export const TESTIMONIALS = [
   {
     icon: "/Face.png",
     name: "Achraf Rami",
-    title: "Founder and CEO, Supreme",
+    title: "Head of medics, pharmzone",
     testimonial:
       " Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
   },
   {
     icon: "/Face.png",
-    name: "Jackson Leo",
-    title: "Founder and CEO, Supreme",
+    name: "Brown Johnson",
+    title: "Food Scientist, Fruiz",
     testimonial:
       " Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
   },
   {
     icon: "/Face.png",
-    name: "Jackson Leo",
-    title: "Founder and CEO, Supreme",
+    name: "Roman Bryan",
+    title: "AI Specialist, Meta",
     testimonial:
       "Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
   },
