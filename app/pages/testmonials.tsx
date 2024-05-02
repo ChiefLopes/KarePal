@@ -112,6 +112,7 @@ const Testimonials = () => {
                       // layout="responsive"
                       // className="rounded-lg md:rounded-none bg-green-400"
                       className="block"
+                      priority
                     />
                     {/* ) : null} */}
 
