@@ -1,69 +1,23 @@
-"use client"
+"use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { SERVICE_GRID } from "../utils/constants";
 import Image from "next/image";
 import Steto from "@/public/stethoscope.png";
-import { motion as m } from "framer-motion";
 
 const Services = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const servicesRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const { top } = servicesRef.current?.getBoundingClientRect() || {};
-      const windowHeight = window.innerHeight;
-
-      // Trigger animation when Services section is in viewport
-      setIsVisible(top < windowHeight);
-    };
-
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Remove event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <m.div
-      className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6"
-      ref={servicesRef}
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
-      transition={{ delay: 0.4, duration: 1.0 }}
-    >
-      <m.div
-        className="text-center"
-        ref={servicesRef}
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
-        transition={{ delay: 0.4, duration: 1.0 }}
-      >
+    <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6">
+      <div className="text-center">
         <h1 className="text-xl font-semibold text-[#2937B6] ">Our Services</h1>
-      </m.div>
-      <m.div
-        className="text-center"
-        ref={servicesRef}
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
-        transition={{ delay: 0.4, duration: 1.0 }}
-      >
+      </div>
+      <div className="text-center">
         <p className="text-sm lg:text-3xl font-semibold text-[#07001A] playfair-font">
           Embark on a Health Journey Guided by KarePal, <br /> Your AI Medical
           Companion
         </p>
-      </m.div>
-      <m.div
-        className="grid grid-cols-2 md:grid-cols-4 md:gap-2 lg:grid-cols-4 gap-4 lg:gap-4"
-        ref={servicesRef}
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
-        transition={{ delay: 0.4, duration: 1.0 }}
-      >
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 md:gap-2 lg:grid-cols-4 gap-4 lg:gap-4 ">
         {SERVICE_GRID.map((service) => (
           <div
             key={service.title}
@@ -76,8 +30,8 @@ const Services = () => {
             </p>
           </div>
         ))}
-      </m.div>
-    </m.div>
+      </div>
+    </div>
   );
 };
 
