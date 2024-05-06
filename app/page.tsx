@@ -21,7 +21,7 @@ export default function Home() {
     // Simulate loading delay with setTimeout
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 100); // Change the delay time as needed (in milliseconds)
+    }, 2000); // Change the delay time as needed (in milliseconds)
 
     // Cleanup function to clear the timer if the component unmounts before loading completes
     return () => clearTimeout(timer);
