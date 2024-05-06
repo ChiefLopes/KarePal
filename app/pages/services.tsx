@@ -12,7 +12,7 @@ const Services = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const { top } = servicesRef.current.getBoundingClientRect();
+      const { top } = servicesRef.current?.getBoundingClientRect() || {};
       const windowHeight = window.innerHeight;
 
       // Trigger animation when Services section is in viewport
