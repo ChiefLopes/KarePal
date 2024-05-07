@@ -6,10 +6,9 @@ import "aos/dist/aos.css";
 const MyContext = createContext();
 
 const Provider = ({ children }) => {
-  useEffect(() => {
-    AOS.init(); // Initialize AOS library
+ useEffect(() => {
+    AOS.init({ duration: 2000 });
   }, []);
-
   // Define your context state or functions here
     const contextValue = {
       aos: AOS,
