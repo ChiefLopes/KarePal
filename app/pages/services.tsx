@@ -14,20 +14,39 @@ const Services = () => {
       className=""
       ref={ref}
       initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1  }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
       transition={{ delay: 0.4, duration: 0.5 }}
     >
       <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6">
-        <div className="text-center" data-aos="fade-up">
+        <m.div
+          className="text-center"
+          data-aos="fade-up"
+          ref={ref}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
           <h1 className="text-xl font-semibold text-[#2937B6]">Our Services</h1>
-        </div>
-        <div className="text-center">
+        </m.div>
+        <m.div
+          className="text-center"
+          ref={ref}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
           <p className="text-sm lg:text-3xl font-semibold text-[#07001A] playfair-font">
             Embark on a Health Journey Guided by KarePal, <br /> Your AI Medical
             Companion
           </p>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-2 lg:grid-cols-4 gap-4 lg:gap-4">
+        </m.div>
+        <m.div
+          className="grid grid-cols-2 md:grid-cols-4 md:gap-2 lg:grid-cols-4 gap-4 lg:gap-4"
+          ref={ref}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
           {SERVICE_GRID.map((service) => (
             <m.div
               key={service.title}
@@ -48,7 +67,7 @@ const Services = () => {
               </p>
             </m.div>
           ))}
-        </div>
+        </m.div>
       </div>
     </m.div>
   );

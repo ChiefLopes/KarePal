@@ -6,10 +6,10 @@ import { motion as m } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="bg-[#001727] h-[95vh] lg:h-[38.6rem]">
+    <div className="bg-[#001727] lg:h-[38.6rem]">
       {/* TEXT AREA*/}
       <m.div
-        className="flex flex-col md:flex-row lg:flex-row lg:justify-between pt-[6rem] lg:pt-[12rem] mx-4 lg:mx-14 lg:space-x-6"
+        className="flex flex-col md:flex-row lg:flex-row lg:justify-between pt-[10rem] lg:pt-[12rem] mx-4 lg:mx-14 lg:space-x-6"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.0 }}
