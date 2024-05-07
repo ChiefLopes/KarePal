@@ -4,7 +4,7 @@ import React from "react";
 import { SERVICE_GRID } from "../utils/constants";
 import Image from "next/image";
 import Steto from "@/public/stethoscope.png";
-import { Link } from "react-scroll";
+
 
 const Services = () => {
   return (
