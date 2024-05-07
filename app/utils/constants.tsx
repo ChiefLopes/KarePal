@@ -1,4 +1,5 @@
 interface TYPES {
+  id?: number;
   href?: any;
   label?: string;
   icon?: string;
@@ -10,30 +11,37 @@ interface TYPES {
 
 export const NAV_LINKS: TYPES[] = [
   {
+    id: 1,
     href: "/",
     label: "Home",
   },
   {
+    id: 2,
     href: "/service",
     label: "Our Services",
   },
   {
+    id: 3,
     href: "/about",
     label: "About Us",
   },
   {
+    id: 4,
     href: "/team",
     label: "Our Team",
   },
   {
+    id: 5,
     href: "/newsletter",
     label: "Newsletter",
   },
   {
+    id: 6,
     href: "/testimonial",
     label: "Testimonials",
   },
   {
+    id: 7,
     href: "/contact",
     label: "Contact Us",
   },
@@ -176,5 +184,4 @@ export const TESTIMONIALS = [
     testimonial:
       "Learn Pro has been a remarkable journey of personal and professional growth. From the moment I enrolled, I knew I was in the right place. The courses offered a perfect balance of theory and practical applications, giving me the knowledge and skills needed to excel in my field.",
   },
-
 ];
