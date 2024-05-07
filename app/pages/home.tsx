@@ -6,7 +6,7 @@ import { motion as m } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="bg-[#001727] lg:h-[38.6rem]">
+    <div className="bg-[#001727] h-[100vh] lg:h-[38.6rem]">
       {/* TEXT AREA*/}
       <m.div
         className="flex flex-col md:flex-row lg:flex-row lg:justify-between pt-[5.6rem] lg:pt-[12rem] mx-4 lg:mx-14 lg:space-x-6"

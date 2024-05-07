@@ -14,7 +14,7 @@ const Services = () => {
       className=""
       ref={ref}
       initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1  }}
       transition={{ delay: 0.4, duration: 0.5 }}
     >
       <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6">

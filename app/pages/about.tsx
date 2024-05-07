@@ -2,10 +2,23 @@ import Image from "next/image";
 import React from "react";
 import Doc from "@/app/Assets/images/Doc.png";
 import PopUp from "@/app/Assets/images/PopUpGroup.png";
+import { motion as m } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+    const { ref, inView } = useInView({
+      threshold: 0.3,
+    });
+  
+  
   return (
-    <div className="bg-[#001727] mt-8 lg:mt-14 h-[57rem] lg:h-[36rem]">
+    <m.div
+      className="bg-[#001727] mt-8 lg:mt-14 h-[57rem] lg:h-[36rem]"
+      ref={ref}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
+      transition={{ delay: 0.4, duration: 0.5 }}
+    >
       <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-5 flex flex-col lg:flex-row text-white pt-4 lg:pt-[5.3rem] space-x-2 lg:space-x-12 text-xl">
         {/* IMAGE AREA */}
         <div className="relative flex items-center justify-center md:hidden lg:block">
@@ -49,7 +62,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 
