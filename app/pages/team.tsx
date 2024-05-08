@@ -3,13 +3,37 @@
 import React from "react";
 import { TEAM_GRID } from "../utils/constants";
 import Image from "next/image";
+import {motion as m} from "framer-motion"
+import { useInView } from "react-intersection-observer";
 
 const Team = () => {
+ const { ref, inView } = useInView({
+   threshold: 0.3,
+ });
+
   return (
-    <div className="">
-      <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6 h-[46rem] md:h-[28rem] lg:h-[32rem]">
+    <m.div
+      className=""
+      ref={ref}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
+      transition={{ delay: 0.4, duration: 0.5 }}
+    >
+      <m.div
+        className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6 h-[46rem] md:h-[28rem] lg:h-[32rem]"
+        ref={ref}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+      >
         {/* TEXT */}
-        <div className="text-center space-y-2">
+        <m.div
+          className="text-center space-y-2"
+          ref={ref}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
           <h1 className="font-bold uppercase text-[#2937B6] text-base lg:text-xl">
             Our team
           </h1>
@@ -21,10 +45,13 @@ const Team = () => {
             millions on a journey to better health through interactive learning
             and personalized insights.
           </p>
-        </div>
+        </m.div>
 
         {/* TEAM GRID */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3">
+        <m.div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3" ref={ref}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
+      transition={{ delay: 0.4, duration: 0.5 }}>
           {TEAM_GRID.map((team: any) => (
             <div
               key={team.name}
@@ -50,9 +77,9 @@ const Team = () => {
               />
             </div>
           ))}
-        </div>
-      </div>
-    </div>
+        </m.div>
+      </m.div>
+    </m.div>
   );
 };
 
