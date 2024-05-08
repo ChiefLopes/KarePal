@@ -5,9 +5,9 @@ import { motion as m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Services = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.3,
-  });
+  // const { ref, inView } = useInView({
+  //   threshold: 0.3,
+  // });
 
   return (
     <m.div className="">
@@ -23,9 +23,7 @@ const Services = () => {
         </m.div>
         <m.div
           className="grid grid-cols-2 md:grid-cols-4 md:gap-2 lg:grid-cols-4 gap-4 lg:gap-4"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
+       
         >
           {SERVICE_GRID.map((service) => (
             <m.div
