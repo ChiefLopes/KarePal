@@ -18,12 +18,11 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay with setTimeout
+  
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // Change the delay time as needed (in milliseconds)
-
-    // Cleanup function to clear the timer if the component unmounts before loading completes
+    }, 1000); 
+  
     return () => clearTimeout(timer);
   }, []);
 

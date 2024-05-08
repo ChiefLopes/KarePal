@@ -20,7 +20,7 @@ const Team = () => {
       transition={{ delay: 0.4, duration: 0.5 }}
     >
       <m.div
-        className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6 h-[46rem] md:h-[28rem] lg:h-[32rem]"
+        className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6 h-[48rem] md:h-[28rem] lg:h-[32rem]"
         ref={ref}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
@@ -55,7 +55,7 @@ const Team = () => {
           {TEAM_GRID.map((team: any) => (
             <div
               key={team.name}
-              className="w-40 h-[16.5rem] px-4 lg:px-0 lg:w-64 lg:h-[19rem] space-y-1 lg:space-y-2 border border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
+              className="w-40 h-[16.5rem] px-4 lg:px-0 lg:w-64 lg:h-[19rem] space-y-1 lg:space-y-2  border-2  rounded p-3 py-3 lg:py-4 flex flex-col items-center "
             >
               {team.icon ? (
                 <Image src={team.icon} alt="team" width={62} height={62} />

@@ -13,7 +13,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="h-[3rem] mt-4 flex items-center justify-between pb-3 mx-4 lg:mx-6 rounded-2xl fixed bg-slate-50 z-50 w-[20rem] lg:w-[81rem] ">
+    <div className="h-[3rem] mt-4 flex items-center justify-between pb-3 mx-4 lg:mx-6 rounded-2xl fixed bg-slate-50 z-50 w-[21rem] lg:w-[81rem] ">
       <Image
         src={Karepal}
         alt="logo"
