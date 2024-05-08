@@ -21,14 +21,16 @@ const Services = () => {
             Companion
           </p>
         </m.div>
-        <m.div className="grid grid-cols-2 md:grid-cols-4 md:gap-2 lg:grid-cols-4 gap-4 lg:gap-4">
+        <m.div
+          className="grid grid-cols-2 md:grid-cols-4 md:gap-2 lg:grid-cols-4 gap-4 lg:gap-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
           {SERVICE_GRID.map((service) => (
             <m.div
               key={service.title}
               className="w-40 h-48 px-2 lg:px-0 lg:w-64 lg:h-72 space-y-1 lg:space-y-4 rounded transition duration-300 ease-linear shadow-xl flex flex-col items-center justify-center hover:bg-[#2937B6] hover:shadow-2xl hover:text-white"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
             >
               <Image
                 src={service.icon || ""}
