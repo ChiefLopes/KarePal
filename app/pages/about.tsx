@@ -29,7 +29,7 @@ const About = () => {
         </div>
 
         {/* TEXT AREA */}
-        <div className="space-y-6 lg:space-y-10">
+        <div className="space-y-5 lg:space-y-10 mr-2">
           <div className="space-y-8 lg:space-y-12">
             <p className="font-bold text-xl font-md md:text-2xl">About Us</p>
             <p

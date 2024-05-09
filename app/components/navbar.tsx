@@ -13,17 +13,17 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="h-[3rem] mt-4 flex items-center justify-between pb-3 mx-4 lg:mx-6 rounded-2xl fixed bg-slate-50 z-50 w-[20.8rem] lg:w-[81rem] ">
+    <div className="h-[3rem] mt-4 flex items-center justify-between pb-3 mx-4 lg:mx-6 rounded-2xl fixed bg-slate-50 z-50 w-[21rem] lg:w-[82rem] lg:ml-5">
       <Image
         src={Karepal}
         alt="logo"
         width={100}
         height={50}
         priority
-        className="lg:ml-[1.85rem] ml-6 cursor-pointer pt-1 w-20 md:w-28"
+        className="lg:ml-[2.3rem] ml-6 cursor-pointer pt-1 w-20 md:w-28"
       />
 
-      <div className="hidden text-sm lg:flex space-x-8 pl-[12rem] lg:pt-4 ">
+      <div className="hidden text-sm lg:flex space-x-8 pl-[10rem] lg:pt-4 ">
         {NAV_LINKS.map((link: any) => (
           <Scrollink
             to={link.href}
