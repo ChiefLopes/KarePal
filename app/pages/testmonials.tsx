@@ -11,9 +11,9 @@ import { motion as m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Testimonials = () => {
-     const { ref, inView } = useInView({
-       threshold: 0.3,
-     });
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
 
   const CustomPrevArrow = ({ onClick }: any) => (
     <button
@@ -88,7 +88,13 @@ const Testimonials = () => {
 
   return (
     <div className="h-[38rem] lg:h-[26rem]">
-      <div className="flex flex-col items-center justify-center mx-5 lg:m-[15px] lg:ml-[4rem] space-y-4 pt-4">
+      <m.div
+        className="flex flex-col items-center justify-center mx-5 lg:m-[15px] lg:ml-[4rem] space-y-4 pt-4"
+        ref={ref}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20, scale: 1 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+      >
         {/* TEXT */}
         <div className="text-center">
           <h1 className="text-[#2937B6] font-bold">Testimonials</h1>
@@ -154,7 +160,7 @@ const Testimonials = () => {
             ))}
           </Slider>
         </div>
-      </div>
+      </m.div>
     </div>
   );
 };
