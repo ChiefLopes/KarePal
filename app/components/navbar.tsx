@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Karepal from "@/app/Assets/images/KarepalLogo.png";
 import { NAV_LINKS } from "../utils/constants";
 import { IoMenu } from "react-icons/io5";
+import { RiArrowUpDoubleLine } from "react-icons/ri";
 // import Link from "next/link";
 import { Link as Scrollink } from "react-scroll";
 import Buttons from "./buttons";
@@ -42,29 +43,31 @@ const Navbar = () => {
 
       <div
         className={`lg:hidden ml-10 font-bold text-xl cursor-pointer ${
-          toggleMenu
-            ? "transition-opacity ease-out duration-300 opacity-100"
-            : "transition-opacity ease-in duration-300 opacity-100 hover:opacity-50"
+          toggleMenu ? "" : ""
         }`}
         onClick={() => setToggleMenu(!toggleMenu)}
       >
-        {toggleMenu ? 1 : <IoMenu className="mt-3 ml-24 " size={30}/>}
+        {toggleMenu ? (
+          <RiArrowUpDoubleLine className="mt-3 ml-32" size={30} />
+        ) : (
+          <IoMenu className="mt-3 ml-24" size={30} />
+        )}
       </div>
 
       {/* FOR MOBILE */}
       <div className="relative space-y-8 ">
         {toggleMenu && (
           <div
-            className={`bg-white text-[#001727] w-[14rem] h-[20rem] mt-[8rem] px-4 z-40 flex flex-col lg:hidden relative right-12 top-20 rounded-s-lg ${
+            className={`bg-slate-50 text-[#001727] w-[16rem] h-[20rem] pt-4 mt-[13rem] px-4 z-40 flex flex-col lg:hidden relative right-[14rem] top-20 rounded-s-lg ${
               toggleMenu ? "" : ""
             }`}
           >
-            <div
+            {/* <div
               className="text-end me-2 text-2xl cursor-pointer"
               onClick={() => setToggleMenu(false)}
             >
               X
-            </div>
+            </div> */}
             <div className="space-y-4">
               {NAV_LINKS.map((nav, index) => (
                 <Scrollink
@@ -74,7 +77,7 @@ const Navbar = () => {
                   href={nav.href}
                   key={index}
                   className="space-y-8"
-                  onClick={() => setToggleMenu((false))}
+                  onClick={() => setToggleMenu(false)}
                 >
                   <p className="font-bold py-1 hover:text-red-400">
                     {nav.label}
