@@ -9,6 +9,7 @@ import { RiArrowUpDoubleLine } from "react-icons/ri";
 // import Link from "next/link";
 import { Link as Scrollink } from "react-scroll";
 import Buttons from "./buttons";
+import { motion as m } from "framer-motion";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -42,9 +43,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`lg:hidden ml-10 font-bold text-xl cursor-pointer ${
-          toggleMenu ? "" : ""
-        }`}
+        className="lg:hidden ml-10 font-bold text-xl cursor-pointer"
         onClick={() => setToggleMenu(!toggleMenu)}
       >
         {toggleMenu ? (
@@ -57,17 +56,13 @@ const Navbar = () => {
       {/* FOR MOBILE */}
       <div className="relative space-y-8 ">
         {toggleMenu && (
-          <div
-            className={`bg-slate-50 text-[#001727] w-[16rem] h-[20rem] pt-4 mt-[13rem] px-4 z-40 flex flex-col lg:hidden relative right-[14rem] top-20 rounded-s-lg ${
-              toggleMenu ? "" : ""
-            }`}
+          <m.div
+            className="bg-slate-50 text-[#001727] w-[16rem] h-[20rem] pt-4 mt-[13rem] px-4 z-40 flex flex-col lg:hidden relative right-[14rem] top-20 rounded-s-lg"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -100, opacity: 0 }}
+            transition={{ duration: 0.7 }}  
           >
-            {/* <div
-              className="text-end me-2 text-2xl cursor-pointer"
-              onClick={() => setToggleMenu(false)}
-            >
-              X
-            </div> */}
             <div className="space-y-4">
               {NAV_LINKS.map((nav, index) => (
                 <Scrollink
@@ -87,7 +82,7 @@ const Navbar = () => {
 
               <Buttons />
             </div>
-          </div>
+          </m.div>
         )}
       </div>
     </div>

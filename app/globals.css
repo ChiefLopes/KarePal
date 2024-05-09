@@ -42,3 +42,7 @@
 .hidden {
   display: none;
 }
+.menu-open {
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(0%);
+}
