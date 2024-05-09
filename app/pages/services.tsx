@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 const Services = () => {
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.3,
   });
 
   return (
