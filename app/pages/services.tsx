@@ -4,13 +4,14 @@ import Image from "next/image";
 import { motion as m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+
 const Services = () => {
   const { ref, inView } = useInView({
     threshold: 0.3,
   });
 
   return (
-    <m.div className="">
+    <m.div >
       <div className="mx-4 lg:m-[15px] lg:ml-[4rem] space-y-4 lg:space-y-7 pt-6">
         <m.div className="text-center" data-aos="fade-up">
           <h1 className="text-xl font-semibold text-[#2937B6]">Our Services</h1>

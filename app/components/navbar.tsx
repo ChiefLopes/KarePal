@@ -69,7 +69,6 @@ const Navbar = () => {
                   to={nav.href}
                   smooth={true}
                   duration={500}
-                  href={nav.href}
                   key={index}
                   className="space-y-8"
                   onClick={() => setToggleMenu(false)}
