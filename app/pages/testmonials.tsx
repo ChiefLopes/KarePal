@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { TESTIMONIALS } from "../utils/constants";
 import Image from "next/image";
@@ -6,8 +7,14 @@ import { Rubik } from "next/font/google";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion as m } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Testimonials = () => {
+     const { ref, inView } = useInView({
+       threshold: 0.3,
+     });
+
   const CustomPrevArrow = ({ onClick }: any) => (
     <button
       onClick={onClick}
