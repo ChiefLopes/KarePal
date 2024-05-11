@@ -10,8 +10,10 @@ import { RiArrowUpDoubleLine } from "react-icons/ri";
 import { Link as Scrollink } from "react-scroll";
 import Buttons from "./buttons";
 import { motion as m } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname()
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -33,7 +35,8 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             key={link.href}
-            className="pt-2 cursor-pointer"
+            // trying to style the nav to match the current path
+            className={`pt-2 cursor-pointer ${link.path === pathname && "text-red-400"}`}
           >
             <a className="flex">{link.label}</a>
           </Scrollink>
@@ -61,7 +64,7 @@ const Navbar = () => {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -100, opacity: 0 }}
-            transition={{ duration: 0.7 }}  
+            transition={{ duration: 0.7 }}
           >
             <div className="space-y-4">
               {NAV_LINKS.map((nav, index) => (

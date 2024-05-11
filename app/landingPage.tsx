@@ -13,10 +13,10 @@ const LandingPage = () => {
     <div className="bg-slate-100">
       <Navbar />
 
-      <div>
+      <div id="/">
         <Hero />
       </div>
-      <div>
+      <div id="/service">
         <Services />
       </div>
       <div id="/about">
@@ -28,7 +28,7 @@ const LandingPage = () => {
       <div id="/newsletter">
         <Newsletter />
       </div>
-      <div >
+      <div id="/testimonial">
         <Testimonials />
       </div>
       <Footer />
