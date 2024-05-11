@@ -33,7 +33,7 @@ const Navbar = () => {
             to={link.href}
             id={link.id}
             smooth={true}
-            duration={500}
+            duration={900}
             key={link.href}
             // trying to style the nav to match the current path
             className={`pt-2 cursor-pointer ${link.path === pathname && "text-red-400"}`}
