@@ -36,9 +36,11 @@ const Navbar = () => {
             duration={900}
             key={link.href}
             // trying to style the nav to match the current path
-            className={`pt-2 cursor-pointer ${link.path === pathname && "text-red-400 hover:font-bold"}`}
+            className={`pt-2 cursor-pointer ${
+              link.path === pathname && "text-red-400 "
+            }`}
           >
-            <a className="flex">{link.label}</a>
+            <a className="flex hover:font-bold">{link.label}</a>
           </Scrollink>
         ))}
 
